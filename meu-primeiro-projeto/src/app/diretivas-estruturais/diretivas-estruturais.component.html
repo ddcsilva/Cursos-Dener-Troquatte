@@ -10,3 +10,13 @@
 <p *ngIf="conditionClick">True</p>
 <p *ngIf="!conditionClick">False</p>
 <p><button (click)="onClick()">Clicar</button></p>
+
+<hr>
+
+<ul>
+  <li *ngFor="let item of listaNomes; let i = index;" (click)="onClickEventList(i)">[{{ i }}] - Nome: {{ item.nome }} | Idade: {{ item.idade }}</li>
+</ul>
+
+<hr>
+
+<p><button (click)="onClickAddList()">Adicionar</button></p>
