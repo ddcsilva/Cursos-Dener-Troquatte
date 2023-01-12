@@ -10,6 +10,7 @@ export class DiretivasAtributosComponent implements OnInit {
   public altura: string = '20px';
   public nome: string = '';
   public lista: Array<{ nome: string }> = [];
+  public date: Date = new Date();
 
   constructor() {}
 
