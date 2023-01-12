@@ -11,3 +11,12 @@
 <li *ngFor="let item of lista">
   {{item.nome}}
 </li>
+
+<hr>
+
+<p>ngTemplate</p>
+<ng-template ngFor let-item [ngForOf]="lista">
+  <p>
+    {{item.nome}}
+  </p>
+</ng-template>
