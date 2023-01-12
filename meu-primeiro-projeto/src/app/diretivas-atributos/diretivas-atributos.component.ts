@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivasAtributosComponent implements OnInit {
   public valor: boolean = true;
+  public altura: string = '20px';
 
   constructor() {}
 
@@ -16,6 +17,12 @@ export class DiretivasAtributosComponent implements OnInit {
         this.valor = false;
       } else {
         this.valor = true;
+      }
+
+      if (this.altura == '20px') {
+        this.altura = '40px';
+      } else {
+        this.altura = '20px';
       }
     }, 2000);
   }
