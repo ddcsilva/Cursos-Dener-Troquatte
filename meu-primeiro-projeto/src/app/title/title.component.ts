@@ -1,20 +1,14 @@
-import { Component, Input, OnChanges, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-title',
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.scss'],
 })
-export class TitleComponent implements OnInit, OnChanges, OnDestroy {
+export class TitleComponent implements OnInit {
   @Input() public title: string = 'Bem vindo!';
 
   constructor() {}
 
   ngOnInit(): void {}
-
-  ngOnChanges(): void {}
-
-  ngOnDestroy(): void {
-    console.log('Componente destruído');
-  }
 }
